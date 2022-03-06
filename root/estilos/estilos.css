@@ -1,0 +1,150 @@
+/*comienzo estilos imagenes*/
+
+#img-destacados{
+Width:67px;
+Height:71px;
+}
+#img-banner{
+width: 100%;
+}
+
+#img-logo{
+Width: 96,35px;
+Height: 23px;
+}
+/*fin estilos imagenes*/
+
+
+.contenedor-principal{
+width: 100%;
+height: 62px;
+display: flex;
+flex-direction: row;
+background: #F0A83E;
+}
+
+.contenedor-list {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+.barra-superior{
+color: #F3F3F3;
+background: #222222; 
+}
+
+.section-banner{
+background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
+background-size: auto;
+height: 409px;
+}
+
+.section-destacados{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#texto-destacados{
+width: 406px;
+height: 47px;
+left: 309px;
+top: 586px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 47px;
+color: #3C2313;
+}
+
+.contenedor-articulos{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-decoration: none;
+}
+
+
+.articulo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-description{
+font-size: 30px;
+line-height: 18px;
+color: #3C2313;
+}
+
+.precio{
+    width: 39.15px;
+    height: 19.64px;
+    left: 500.81px;
+    top: 1004.91px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+color: #F0A83E;
+}
+
+/*estilos del formulario*/
+
+input{
+    width: 340px;
+height: 40px;
+left: calc(50% - 340px/2 + 1px);
+top: calc(50% - 40px/2 + 325.5px);
+
+background: #3C2313;
+border-radius: 15px;
+}
+
+#b-resetear{
+    width: 110px;
+    height: 34px;
+    left: calc(50% - 110px/2 - 52px);
+    top: calc(50% - 34px/2 + 453.5px);
+    
+    background: #8A8787;
+    border-radius: 15px;
+   
+}
+
+#b-enviar{
+    width: 110px;
+    height: 34px;
+    left: calc(50% - 110px/2 + 64px);
+    top: calc(50% - 34px/2 + 453.5px);
+    
+    background: #F0A83E;
+    border-radius: 15px;
+}
+
+.cont-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.cont-buttom{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
