@@ -1,7 +1,24 @@
-/*Comienzo estilos nav*/
-.barra-superior {
+/**************** Comienzo estilos nav ****************/
+body {
+  margin: auto;
+}
+
+.contenedor-list-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: #f3f3f3;
   background: #222222;
+}
+.list-moneda {
+  color: #ffffff;
+  background: #222222;
+  border:#222222;
+}
+.list-idioma {
+  color: #ffffff;
+  background: #222222;
+  border:#222222;
 }
 .contenedor-principal {
   width: 100%;
@@ -9,6 +26,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background: #f0a83e;
 }
 #img-logo {
@@ -16,19 +34,38 @@
   height: 23px;
 }
 .contenedor-list {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content:flex-end;
+  padding-right: 15px;
 }
-/*Fin estilos nav*/
 
-/*Comienzo estilos seccion banner*/
+.contenedor-list-a{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+/* *************** Fin estilos nav ****************/
+
+/**************** Comienzo estilos seccion banner ****************/
 .section-banner {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
   background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  height: 100%;
   height: 409px;
+}
+.cont-banner {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  padding-right: 5px;
+  padding-left: 5px;
+ 
 }
 .text-banner {
   width: 190px;
@@ -50,14 +87,10 @@
   top: 237px;
   background: #ffffff;
   border-radius: 5px;
-  width: 345px;
-  height: 35px;
-  left: 658px;
-  top: 246px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 35px;
   text-align: center;
   color: #3c2313;
@@ -70,14 +103,22 @@
   background: #f0a83e;
   border-radius: 5px;
 }
-/*Fin estilos seccion banner*/
+/* *************** Fin estilos seccion banner ****************/
 
-/*Comienzo estilos contenedor articulos*/
+/**************** Comienzo estilos contenedor articulos ****************/
+
+.section-destacados{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+align-items: center;
+}
 .contenedor-articulos {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  text-decoration: none;
+  flex-wrap: wrap;
+justify-content: space-around;
+
 }
 .articulo1 {
   display: flex;
@@ -98,6 +139,7 @@
   font-size: 30px;
   line-height: 18px;
   color: #3c2313;
+  
 }
 .precio {
   width: 39.15px;
@@ -111,20 +153,17 @@
   line-height: 18px;
   color: #f0a83e;
 }
-/*Fin estilos contenedor articulos*/
+/**************** Fin estilos contenedor articulos ****************/
 
-/*Comienzo seccion destacados*/
-.section-destacados {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/**************** Comienzo seccion destacados ****************/
+
 #img-destacados {
   width: 67px;
   height: 71px;
+  text-align: center;
 }
 #texto-destacados {
-  width: 406px;
+  width: 100%;
   height: 47px;
   left: 309px;
   top: 586px;
@@ -134,22 +173,30 @@
   font-size: 40px;
   line-height: 47px;
   color: #3c2313;
+  text-align: center;
 }
-/*Fin seccion destacados*/
+/**************** Fin seccion destacados ****************/
 
-/*Comienzo estilos del formulario*/
+/**************** Comienzo estilos del formulario ****************/
+.cont-imput{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
 .cont-form {
+  width: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 input {
-  width: 340px;
+  width: 75%;
   height: 40px;
   left: calc(50% - 340px / 2 + 1px);
   top: calc(50% - 40px / 2 + 325.5px);
   background: #3c2313;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 .cont-buttom {
   display: flex;
@@ -157,33 +204,41 @@ input {
   justify-content: space-around;
 }
 #b-resetear {
-  width: 110px;
-  height: 34px;
-  left: calc(50% - 110px / 2 - 52px);
-  top: calc(50% - 34px / 2 + 453.5px);
-  background: #8a8787;
-  border-radius: 15px;
+width: 160px;
+height: 45px;
+left: calc(50% - 199px/2 - 102.5px);
+bottom: 480px;
+background: #8A8787;
+border-radius: 25px;
+color: #ffffff;
+font-size: 16px;
+margin-right: 2px;
+border: #ffffff;
 }
 #b-enviar {
-  width: 110px;
-  height: 34px;
-  left: calc(50% - 110px / 2 + 64px);
-  top: calc(50% - 34px / 2 + 453.5px);
-  background: #f0a83e;
-  border-radius: 15px;
+  width: 160px;
+  height: 45px;
+  left: calc(50% - 199px/2 + 102.5px);
+  bottom: 480px;
+  background: #F0A83E;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 2px;
+  border: #ffffff;
 }
-/*Comienzo estilos del formulario*/
+/**************** Comienzo estilos del formulario ****************/
 
-/*Comienzo estilos del subcription*/
-.sect-subscrition {
+/**************** Comienzo estilos del subcription ****************/
+.sect-subscripcion{
   width: 100%;
-  height: 60px;
+  height: 101px;
   left: calc(50% - 1024px / 2);
   top: calc(50% - 60px / 2 + 575.5px);
   margin-top: 100px;
   background: #f0a83e;
 }
-.texto-bubcription {
+.texto-suscripcion{
   width: 288px;
   height: 23px;
   left: calc(50% - 288px / 2 - 295px);
@@ -204,16 +259,30 @@ input {
   border-radius: 15px;
 }
 #label-email {
-  width: 70px;
-  height: 34px;
-  left: calc(50% - 70px / 2 + 430px);
-  top: calc(50% - 34px / 2 + 575.5px);
-  background: #3c2313;
+  width: 100px;
+  height: 35px;
+  left: calc(50% - 100px/2 + 128px);
+  bottom: 346px;
+  background: #3C2313;
   border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 7px;
+  box-sizing: content-box;
+  font-weight: 700 bold;
 }
-/*Fin estilos del subcription*/
+.input-form{
+  width: 261px;
+height: 40px;
+left: calc(50% - 261px/2 - 61.5px);
+bottom: 344px;
 
-/*Comienzo estilos del footer*/
+background: #FFFFFF;
+border-radius: 15px;
+}
+/**************** Fin estilos del subcription ****************/
+
+/**************** Comienzo estilos del footer ****************/
 footer {
   width: 100%;
   height: 284px;
@@ -221,4 +290,4 @@ footer {
   bottom: 17px;
   background: #3c2313;
 }
-/*Fin estilos del footer*/
+/**************** Fin estilos del footer ****************/
