@@ -3,6 +3,12 @@ body {
   margin: auto;
 }
 
+.barra-sup {
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
 #menu {
   display: none;
 }
@@ -18,11 +24,13 @@ body {
   color: #ffffff;
   background: #222222;
   border: #222222;
+  font-size: 10px;
 }
 .list-idioma {
   color: #ffffff;
   background: #222222;
   border: #222222;
+  font-size: 10px;
 }
 .contenedor-principal {
   width: 100%;
@@ -179,19 +187,24 @@ body {
 /**************** Fin seccion destacados ****************/
 
 /**************** Comienzo estilos del formulario ****************/
+
+.title-form {
+  text-align: center;
+}
 .cont-imput {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.cont-form {
+.cont-subcrip {
+  width: 100%;
   width: 100;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 input {
-  width: 75%;
+  width: 40%;
   height: 40px;
   left: calc(50% - 340px / 2 + 1px);
   top: calc(50% - 40px / 2 + 325.5px);
@@ -202,7 +215,7 @@ input {
 .cont-buttom {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 #b-resetear {
   width: 160px;
@@ -236,7 +249,7 @@ input {
   height: 101px;
   left: calc(50% - 1024px / 2);
   top: calc(50% - 60px / 2 + 575.5px);
-  margin-top: 100px;
+
   background: #f0a83e;
 }
 .texto-suscripcion {
@@ -253,11 +266,12 @@ input {
 }
 #imput-email {
   width: 271px;
-  height: 40px;
+  height: 35px;
   left: calc(50% - 271px / 2 + 254.5px);
   top: calc(50% - 40px / 2 + 575.5px);
   background: #ffffff;
   border-radius: 15px;
+  margin-top: 5px;
 }
 #label-email {
   width: 100px;
@@ -268,13 +282,15 @@ input {
   border-radius: 15px;
   color: #ffffff;
   text-align: center;
-  padding-top: 7px;
+
   box-sizing: content-box;
   font-weight: 700 bold;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 .input-form {
   width: 261px;
-  height: 40px;
+  height: 35px;
   left: calc(50% - 261px / 2 - 61.5px);
   bottom: 344px;
 
@@ -305,18 +321,23 @@ footer {
     display: block;
   }
 
-  .contenedor-principal{
+  .contenedor-principal {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
-  
-.cont-secundario{
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content:space-around;
 
-}
-
+  .cont-secundario {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .texto-suscripcion {
+    width: 100%;
+    text-align: center;
+  }
+  input {
+    width: 75%;
+  }
 }
