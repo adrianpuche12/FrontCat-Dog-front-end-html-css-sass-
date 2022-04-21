@@ -1,0 +1,63 @@
+
+.barra-sup {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  .contenedor-list-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f3f3f3;
+    background: #222222;
+  }
+  
+  .list-moneda {
+    color: #ffffff;
+    background: #222222;
+    border: #222222;
+    font-size: 10px;
+  }
+  
+  .list-idioma {
+    color: #ffffff;
+    background: #222222;
+    border: #222222;
+    font-size: 10px;
+  }
+  
+  .contenedor-principal {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0a83e;
+  }
+  
+  #img-logo {
+    width: 96, 35px;
+    height: 23px;
+  }
+  
+  .contenedor-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+  
+  .contenedor-list-a {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+  }

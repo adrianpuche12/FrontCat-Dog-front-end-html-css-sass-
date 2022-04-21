@@ -1,0 +1,377 @@
+/* construyendo estractura 7-1 */
+
+@use "sass/abstracts/variables";
+@use "sass/abstracts/colors";
+@use "sass/abstracts/mixins";
+
+@use "sass/base/base";
+@use "sass/base/reset";
+@use "sass/base/typography";
+@use "sass/base/normalize";
+
+@use "sass/components/alert";
+@use "sass/components/button";
+@use "sass/components/badge";
+@use "sass/components/label";
+@use "sass/components/modal";
+@use "sass/components/course-card";
+@use "sass/components/infobox";
+@use "sass/components/success-popup";
+@use "sass/components/profile-card";
+
+@use "sass/layout/navbar";
+@use "sass/layout/footer";
+@use "sass/layout/sidebal";
+@use "sass/layout/header";
+
+@use "sass/pages/product";
+@use "sass/pages/product-single";
+@use "sass/pages/blog";
+@use "sass/pages/blog-single";
+@use "sass/pages/invoice";
+@use "sass/pages/login";
+@use "sass/pages/signup";
+
+@use "sass/themes/dark-theme";
+@use "sass/themes/light-theme";
+@use "sass/themes/material-theme";
+@use "sass/themes/fiat-theme";
+
+@use "sass/vendors/bootstrap";
+@use "sass/vendors/owl-carrousel";
+@use "sass/vendors/jqueryui";
+
+*{
+  body {
+    margin: auto;
+  }
+}
+
+/**************** Comienzo estilos seccion banner ****************/
+.section-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  height: 409px;
+}
+
+.cont-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.text-banner {
+  width: 190px;
+  height: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #3c2313;
+}
+
+.title-banner {
+  width: 365px;
+  height: 54px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #3c2313;
+}
+
+/* *************** Fin estilos seccion banner ****************/
+
+/**************** Comienzo estilos contenedor articulos ****************/
+
+.cont-articles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.section-destacados {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.contenedor-articulos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.articulo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articulo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articulo3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-description {
+  font-size: 30px;
+  line-height: 18px;
+  color: #3c2313;
+}
+
+.precio {
+  width: 39.15px;
+  height: 19.64px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #f0a83e;
+}
+
+/**************** Fin estilos contenedor articulos ****************/
+
+/**************** Comienzo seccion destacados ****************/
+
+#img-destacados {
+  width: 67px;
+  height: 71px;
+  text-align: center;
+}
+
+#texto-destacados {
+  width: 100%;
+  height: 47px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #3c2313;
+  text-align: center;
+}
+
+/**************** Fin seccion destacados ****************/
+
+/**************** Comienzo estilos del formulario ****************/
+
+.title-form {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.cont-imput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-subcrip {
+  width: 100%;
+  width: 100;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+input {
+  width: 30%;
+  height: 40px;
+  background: #3c2313;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffff;
+}
+
+.cont-buttom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/**************** Comienzo estilos del formulario ****************/
+.label {
+
+  text-align: start;
+}
+
+/**************** Comienzo estilos del subcription ****************/
+.sect-subscripcion {
+  width: 100%;
+  height: 101px;
+  background: #f0a83e;
+}
+
+.texto-suscripcion {
+  width: 288px;
+  height: 23px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+#imput-email {
+  width: 271px;
+  height: 35px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+.input-form {
+  width: 261px;
+  height: 35px;
+  bottom: 344px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+/**************** Fin estilos del subcription ****************/
+
+/**************** Comienzo de @media ****************/
+
+@media screen and (max-width: 375px) {
+  #b-resetear {
+    margin-left: 2px;
+  }
+
+  #b-enviar {
+    margin-right: 2px;
+  }
+
+  .cont-subcrip {
+    margin-left: 2px;
+  }
+
+  #label-email {
+    margin-left: 1px;
+  }
+
+  .input-form {
+    width: 30%;
+    margin-right: 1px;
+  }
+}
+ 
+@media screen and (max-width: 425px) {
+
+
+  .contenedor-list {
+    display: none;
+  }
+
+  header {
+    flex-direction: row-reverse;
+  }
+
+  #menu {
+    color: #ffffff;
+    font-size: 26px;
+    display: block;
+  }
+
+  .contenedor-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cont-secundario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .texto-suscripcion {
+    width: 100%;
+    text-align: center;
+  }
+
+  input {
+    width: 75%;
+  }
+
+  #cont-general-sgv{
+    flex-direction: column-reverse;
+  }
+
+  #cont-footer {
+    flex-direction: column-reverse;
+  }
+
+  .cont-logo-footer {
+    margin-top: 5px;
+    width: 45%;
+  }
+  #logo-sgv-footer{
+margin-top: 30px;
+ margin-left: 0%;
+    width: auto;
+    height: 23px;
+  }
+  #cont-sgv{
+margin: 0%;
+  }
+  #sgv{
+width: auto;
+  }
+  #cont-div{
+    margin: 0%;
+  }
+
+  #p-sgv1{
+    width: auto;
+  }
+  .logo-sgv{
+    width: 28px;
+    height: 28px;
+    padding: 12px 12px;
+    margin-right: 8px;
+  }
+
+  .p1-sgv1{
+ 
+    font-size: 18px;
+   
+  }
+  
+  
+  .p2-sgv1{
+   
+    font-size: 12px;
+  
+  }
+  
+
+
+}
