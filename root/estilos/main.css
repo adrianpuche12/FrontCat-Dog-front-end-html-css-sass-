@@ -206,6 +206,7 @@
 
 /**************** Comienzo estilos seccion banner ****************/
 .section-banner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,11 +227,11 @@
   height: 19px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #3c2313;
+  color: #f5f1ef;
 }
 
 .title-banner {
@@ -318,8 +319,16 @@
 /**************** Fin seccion destacados ****************/
 /**************** Comienzo estilos del formulario ****************/
 .title-form {
+  width: auto;
+  height: 47px;
   text-align: center;
   font-size: xx-large;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #3C2313;
 }
 
 .cont-imput {
@@ -541,5 +550,10 @@ input {
 
   .p2-sgv1 {
     font-size: 12px;
+  }
+
+  .texto-suscripcion {
+    font-size: 20px;
+    line-height: 23px;
   }
 }/*# sourceMappingURL=main.css.map */
