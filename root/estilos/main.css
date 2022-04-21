@@ -376,7 +376,7 @@ input {
 /**************** Comienzo estilos del subcription ****************/
 .sect-subscripcion {
   width: 100%;
-  height: 101px;
+  height: auto;
   background: #f0a83e;
 }
 
@@ -476,6 +476,13 @@ input {
     flex-direction: column-reverse;
   }
 
+  .sect-subscripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
   .cont-logo-footer {
     margin-top: 5px;
     width: 45%;
@@ -486,6 +493,12 @@ input {
     margin-left: 0%;
     width: auto;
     height: 23px;
+  }
+
+  .cont-subcrip {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   #cont-sgv {
