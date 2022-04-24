@@ -1,3 +1,13 @@
+/*  estilos base para el proyecto */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* body {
+  margin: auto;
+  margin: 0%;
+}
+
+/* Variables */
 .butt-banner {
   width: 141px;
   height: 49px;
@@ -11,10 +21,10 @@
   bottom: 480px;
   background: #8a8787;
   border-radius: 25px;
-  color: #ffffff;
+  color: white;
   font-size: 16px;
   margin-right: 2px;
-  border: #ffffff;
+  border: white;
 }
 
 #b-enviar {
@@ -24,18 +34,18 @@
   background: #f0a83e;
   border-radius: 25px;
   font-size: 16px;
-  color: #ffffff;
+  color: white;
   margin-left: 2px;
-  border: #ffffff;
+  border: white;
 }
 
-#label-email {
+#botton-email {
   width: 100px;
   height: 35px;
   bottom: 340px;
-  background: #3c2313;
+  background: #3C2313;
   border-radius: 15px;
-  color: #ffffff;
+  color: white;
   text-align: center;
   box-sizing: content-box;
   font-weight: 700 bold;
@@ -75,7 +85,7 @@
   font-size: 10px;
 }
 
-.contenedor-principal {
+.cont-row {
   width: 100%;
   height: 62px;
   display: flex;
@@ -106,15 +116,18 @@
   font-size: 13px;
 }
 
+/* Variables de color */
+/*Estilos para el footer */
 #pie {
   color: white;
-  background-color: black;
+  background-color: #504f4f;
 }
 
 #pie-text {
   font-family: "Roboto";
   text-align: center;
   margin: 0%;
+  background: rgba(0, 0, 0, 0);
 }
 
 #cont-footer {
@@ -174,7 +187,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: white;
 }
 
 #sgv-suscrip {
@@ -199,57 +212,8 @@
   margin-left: 350px;
 }
 
-/* construyendo estractura 7-1 */
-* body {
-  margin: auto;
-}
-
-/**************** Comienzo estilos seccion banner ****************/
-.section-banner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
-  height: 409px;
-}
-
-.cont-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.text-banner {
-  width: 190px;
-  height: 19px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #f5f1ef;
-}
-
-.title-banner {
-  width: 365px;
-  height: 54px;
-  background: #ffffff;
-  border-radius: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
-  color: #3c2313;
-}
-
-/* *************** Fin estilos seccion banner ****************/
-/**************** Comienzo estilos contenedor articulos ****************/
+/* Variables de color */
+/* Variables */
 .cont-articles {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +225,24 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+
+#img-destacados {
+  width: 67px;
+  height: 71px;
+  text-align: center;
+}
+
+#texto-destacados {
+  width: 100%;
+  height: 47px;
+  font-family: roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #3C2313;
+  text-align: center;
 }
 
 .contenedor-articulos {
@@ -282,13 +264,13 @@
 .text-description {
   font-size: 30px;
   line-height: 18px;
-  color: #3c2313;
+  color: #3C2313;
 }
 
 .precio {
   width: 39.15px;
   height: 19.64px;
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -296,34 +278,62 @@
   color: #f0a83e;
 }
 
-/**************** Fin estilos contenedor articulos ****************/
-/**************** Comienzo seccion destacados ****************/
-#img-destacados {
-  width: 67px;
-  height: 71px;
-  text-align: center;
-}
-
-#texto-destacados {
+/* Variables */
+/* construyendo estractura 7-1 */
+/* Variables de color */
+/* Variables */
+/**************** Comienzo estilos seccion banner ****************/
+.cont-column {
   width: 100%;
-  height: 47px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 47px;
-  color: #3c2313;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/root/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  height: 409px;
 }
 
-/**************** Fin seccion destacados ****************/
+.cont-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.text-banner {
+  width: 190px;
+  height: 19px;
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+}
+
+.title-banner {
+  width: 365px;
+  height: 54px;
+  background: white;
+  border-radius: 5px;
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #3C2313;
+}
+
+/* *************** Fin estilos seccion banner ****************/
 /**************** Comienzo estilos del formulario ****************/
 .title-form {
   width: auto;
   height: 47px;
   text-align: center;
   font-size: xx-large;
-  font-family: "Roboto";
+  font-family: roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -348,10 +358,10 @@
 input {
   width: 30%;
   height: 40px;
-  background: #3c2313;
+  background: #3C2313;
   border-radius: 15px;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: white;
 }
 
 ::-moz-placeholder {
@@ -394,18 +404,18 @@ input {
 .texto-suscripcion {
   width: 100%;
   height: 23px;
-  font-family: Roboto;
+  font-family: roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 23px;
-  color: #ffffff;
+  color: white;
 }
 
 #imput-email {
   width: 271px;
   height: 35px;
-  background: #ffffff;
+  background: white;
   border-radius: 15px;
   margin-top: 5px;
 }
@@ -414,7 +424,7 @@ input {
   width: 261px;
   height: 35px;
   bottom: 344px;
-  background: #ffffff;
+  background: white;
   border-radius: 15px;
 }
 
@@ -461,12 +471,12 @@ input {
   }
 
   #menu {
-    color: #ffffff;
+    color: white;
     font-size: 26px;
     display: block;
   }
 
-  .contenedor-principal {
+  .cont-row {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -475,7 +485,7 @@ input {
   .cont-secundario {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
   }
 

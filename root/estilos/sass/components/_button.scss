@@ -1,7 +1,19 @@
+
+
+/* Variables */
+
+$color_principal: #f0a83e;
+
+$color_secundario: #3C2313;
+
+$color_blanco: #ffff;
+
+
+
 .butt-banner {
     width: 141px;
     height: 49px;
-    background: #f0a83e;
+    background:$color_principal;
     border-radius: 5px;
   }
   #b-resetear {
@@ -10,30 +22,31 @@
     bottom: 480px;
     background: #8a8787;
     border-radius: 25px;
-    color: #ffffff;
+    color: $color_blanco;
     font-size: 16px;
     margin-right: 2px;
-    border: #ffffff;
+    border: $color_blanco;
   }
   
   #b-enviar {
     width: 160px;
     height: 45px;
     bottom: 480px;
-    background: #f0a83e;
+    background: $color_principal;
+
     border-radius: 25px;
     font-size: 16px;
-    color: #ffffff;
+    color: $color_blanco;
     margin-left: 2px;
-    border: #ffffff;
+    border: $color_blanco;
   }
-  #label-email {
+  #botton-email {
     width: 100px;
     height: 35px;
     bottom: 340px;
-    background: #3c2313;
+    background: $color_secundario;
     border-radius: 15px;
-    color: #ffffff;
+    color: $color_blanco;
     text-align: center;
     box-sizing: content-box;
     font-weight: 700 bold;

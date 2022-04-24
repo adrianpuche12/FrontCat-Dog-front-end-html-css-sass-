@@ -41,14 +41,31 @@
 @use "sass/vendors/owl-carrousel";
 @use "sass/vendors/jqueryui";
 
-*{
-  body {
-    margin: auto;
-  }
-}
+@use "sass/@media/max-width_375px";
+@use "sass/@media/max-width_425px";
+
+
+/* Variables de color */
+
+$color_secundario: #3C2313;
+
+$color_blanco: #ffff;
+
+$color_gris_fondo_primario: #8A8787;
+
+$color_gris_fondo_secundario: #504f4f;
+
+$color_black: #0000;
+
+$color_principal: #f0a83e;
+
+/* Variables */
+
+$tipografia: roboto;
+
 
 /**************** Comienzo estilos seccion banner ****************/
-.section-banner {
+.cont-column {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -68,105 +85,31 @@
 .text-banner {
   width: 190px;
   height: 19px;
-  font-family: Roboto;
+  font-family: $tipografia;
   font-style: normal;
-  font-weight:700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #f5f1ef;
+  color: $color_blanco;
 }
 
 .title-banner {
   width: 365px;
   height: 54px;
-  background: #ffffff;
+  background: $color_blanco;
   border-radius: 5px;
-  font-family: Roboto;
+  font-family: $tipografia;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 35px;
   text-align: center;
-  color: #3c2313;
+  color: $color_secundario;
 }
 
 /* *************** Fin estilos seccion banner ****************/
 
-/**************** Comienzo estilos contenedor articulos ****************/
-
-.cont-articles {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-}
-
-.section-destacados {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.contenedor-articulos {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.articulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  -webkit-box-shadow: 6px 10px 5px 0px rgba(240,168,62,1);
-  -moz-box-shadow: 6px 10px 5px 0px rgba(240,168,62,1);
-  box-shadow: 6px 10px 5px 0px rgba(240,168,62,1);
-}
-
-.text-description {
-  font-size: 30px;
-  line-height: 18px;
-  color: #3c2313;
-}
-
-.precio {
-  width: 39.15px;
-  height: 19.64px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #f0a83e;
-}
-
-/**************** Fin estilos contenedor articulos ****************/
-
-/**************** Comienzo seccion destacados ****************/
-
-#img-destacados {
-  width: 67px;
-  height: 71px;
-  text-align: center;
-}
-
-#texto-destacados {
-  width: 100%;
-  height: 47px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 47px;
-  color: #3c2313;
-  text-align: center;
-}
-
-/**************** Fin seccion destacados ****************/
 
 /**************** Comienzo estilos del formulario ****************/
 
@@ -175,12 +118,12 @@
   height: 47px;
   text-align: center;
   font-size: xx-large;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 47px;
-color: #3C2313;
+  font-family: $tipografia;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: $color_secundario;
 }
 
 .cont-imput {
@@ -200,14 +143,14 @@ color: #3C2313;
 input {
   width: 30%;
   height: 40px;
-  background: #3c2313;
+  background: $color_secundario;
   border-radius: 15px;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: $color_blanco;
 }
 
 ::placeholder {
-  color: #ffff;
+  color: $color_blanco;
 }
 
 .cont-buttom {
@@ -226,29 +169,30 @@ input {
 .sect-subscripcion {
   width: 100%;
   height: auto;
-  background: #f0a83e;
+  background: $color_principal;
 }
 
-#vector-sect-subscripcion{
+#vector-sect-subscripcion {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .texto-suscripcion {
   width: 100%;
   height: 23px;
-  font-family: Roboto;
+  font-family: $tipografia;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 23px;
-  color: #ffffff;
+  color: $color_blanco;
 }
 
 #imput-email {
   width: 271px;
   height: 35px;
-  background: #ffffff;
+  background: $color_blanco;
   border-radius: 15px;
   margin-top: 5px;
 }
@@ -257,11 +201,12 @@ input {
   width: 261px;
   height: 35px;
   bottom: 344px;
-  background: #ffffff;
+  background: $color_blanco;
   border-radius: 15px;
 }
 
 /**************** Fin estilos del subcription ****************/
+
 
 /**************** Comienzo de @media ****************/
 
@@ -288,12 +233,13 @@ input {
     margin-right: 1px;
   }
 }
- 
+
+
 @media screen and (max-width: 425px) {
 
 
   .articulo {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   .text-description {
@@ -309,12 +255,12 @@ input {
   }
 
   #menu {
-    color: #ffffff;
+    color: $color_blanco;
     font-size: 26px;
     display: block;
   }
 
-  .contenedor-principal {
+  .cont-row {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -323,7 +269,7 @@ input {
   .cont-secundario {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
   }
 
@@ -336,7 +282,7 @@ input {
     width: 75%;
   }
 
-  #cont-general-sgv{
+  #cont-general-sgv {
     flex-direction: column-reverse;
   }
 
@@ -345,61 +291,63 @@ input {
   }
 
   .sect-subscripcion {
-  display: flex;
-flex-direction: column;
-justify-content: center;
-margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .cont-logo-footer {
     margin-top: 5px;
     width: 45%;
   }
-  #logo-sgv-footer{
-margin-top: 30px;
- margin-left: 0%;
+
+  #logo-sgv-footer {
+    margin-top: 30px;
+    margin-left: 0%;
     width: auto;
     height: 23px;
   }
 
-  .cont-subcrip{
+  .cont-subcrip {
     flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 10px;
   }
-  #cont-sgv{
-margin: 0%;
-  }
-  #sgv{
-width: auto;
-  }
-  #cont-div{
+
+  #cont-sgv {
     margin: 0%;
   }
 
-  #p-sgv1{
+  #sgv {
+    width: auto;
+  }
+
+  #cont-div {
+    margin: 0%;
+  }
+
+  #p-sgv1 {
     width: 100%;
   }
 
-  .logo-sgv{
+  .logo-sgv {
     width: 28px;
     height: 28px;
     padding: 12px 12px;
     margin-right: 8px;
   }
 
-  .p1-sgv1{
+  .p1-sgv1 {
     font-size: 18px;
   }
-  
-  .p2-sgv1{
+
+  .p2-sgv1 {
     font-size: 12px;
   }
+
   .texto-suscripcion {
     font-size: 20px;
     line-height: 23px;
   }
-  
-
-
 }
